@@ -47,9 +47,10 @@ body {
   display: inline-block;
   margin-right: 5px;
 }
-.demo-header .outbound-links a {
+.demo-header .outbound-links li > a {
   text-decoration: none;
   color: #2a93e9;
+  font-weight: normal;
 }
 
 @media (min-width: 48em){
