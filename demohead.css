@@ -80,4 +80,6 @@ body {
   }
 }
 
-
+pre {
+  white-space: pre-line;
+}
