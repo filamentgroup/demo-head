@@ -67,3 +67,17 @@ body {
     margin-right: 60px;
   }
 }
+
+
+.docs-main {
+  margin: 1em;
+  max-width: 50em;
+}
+
+@media (min-width: 52em) {
+  .docs-main {
+    margin: 1em auto;
+  }
+}
+
+
