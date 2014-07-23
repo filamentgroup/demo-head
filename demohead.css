@@ -90,3 +90,55 @@ body {
 pre {
   white-space: pre-line;
 }
+
+.nav-container:before,
+.nav-container:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+.nav-container:after {
+	clear: both;
+}
+.nav-container {
+	*zoom: 1;
+}
+.docs-globalnav {
+	list-style-type: none;
+	float: left;
+	width: 100%;
+	background-color: #F2F1ED;
+	margin: 0;
+	padding: 0;
+}
+.docs-globalnav a {
+	padding: 0.6em 1.5em 0.5em;
+	display: block;
+	border-bottom: 1px solid #DDD;
+}
+.docs-nav a {
+	font-size: 0.9em;
+}
+.docs-nav a.current {
+	background: #fff;
+}
+.docs-nav a:link,
+.docs-nav a:visited {
+	color:#38c;
+	text-decoration:none;
+}
+.docs-nav a:hover {
+	color:#37b;
+	text-decoration:underline;
+}
+@media screen and (min-width: 50em) {
+	.docs-globalnav .docs-nav {
+		border: none;
+		padding: .25em 0 0 0;
+	}
+	.docs-globalnav a {
+		padding: .8em 1.5em;
+		float: left;
+		border-bottom: none;
+	}
+
+}
