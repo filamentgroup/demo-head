@@ -26,19 +26,20 @@
     };
 
   // load font (woff)
-  var fontURL = "/demo-head/type/fonts.woff.min.css",
+  var protocol = location.protocol;
+  var fontURL = "filamentgroup.github.io/demo-head/type/fonts.woff.min.css",
     ua = navigator.userAgent,
     chromer = ua.indexOf( "Chrome" ) > -1;
   //  ttf if non-chrome android webkit browser
   if( ua.indexOf( "Android" ) > -1 && ua.indexOf( "like Gecko" ) > -1 && !chromer ){
-    fontURL = "/demo-head/type/fonts.ttf.min.css";
+    fontURL = "filamentgroup.github.io/demo-head/type/fonts.ttf.min.css";
   }
   // svg if windows chromer < 37 (supposedly, though 37 looks like crap still right now. so...)
   if( ua.indexOf( "Windows" ) > -1 && chromer ){
     //if( parseInt( window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10 ) < 37 ){
-      fontURL = "/demo-head/type/fonts.svg.min.css";
+      fontURL = "filamentgroup.github.io/demo-head/type/fonts.svg.min.css";
     //}
   }
 
-  load( fontURL );
+  load( protocol + "//" + fontURL );
 }( this ));
