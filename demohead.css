@@ -189,4 +189,7 @@ pre {
     float: right;
     width: 75%;
   }
+  .nav-container-large + .docs-main h3 {
+    text-align: center;
+  }
 }
