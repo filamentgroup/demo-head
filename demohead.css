@@ -143,49 +143,49 @@ pre {
 
 }
 
-.docs-globalnav-large:before {
+.nav-container-large .docs-globalnav:before {
 	content: "Menu";
 	background: url('https://filamentgroup.github.io/demo-head/img/menubars.png') no-repeat scroll 1.5em 50% transparent;
 	color: #555;
 	padding: 1em 3.5em;
 	display: block;
 }
-.docs-globalnav-large a {
+.nav-container-large .docs-globalnav a {
 	position: absolute;
 	left: -999px;
 	display: block;
 }
-.docs-globalnav-large.menuopen a {
+.nav-container-large .docs-globalnav.menuopen a {
 	position: static;
 }
 
 
 @media (min-width: 43em){
-	.docs-globalnav-large:before {
+  .nav-container-large .docs-globalnav:before {
 		content: "";
 		background: none;
 		color: transparent;
 		padding: 0;
 		display: inline;
 	}
-	.docs-globalnav-large {
+	.nav-container-large .docs-globalnav {
     display: block;
     float: none;
 		background-color: #F2F1ED;
 	}
-	.docs-globalnav-large a {
+	.nav-container-large .docs-globalnav a {
 		position: static;
 		float: none;
 		border-bottom: 1px solid #DDD;
 	}
 
-  .nav-container {
+  .nav-container-large {
     clear: none;
     float: left;
     display: block;
 		width: 25%;
   }
-  .nav-container + .docs-main {
+  .nav-container-large + .docs-main {
     float: right;
   }
 }
