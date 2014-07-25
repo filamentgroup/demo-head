@@ -160,7 +160,7 @@ pre {
 }
 
 
-@media (min-width: 43em){
+@media (min-width: 54em){
   .nav-container-large .docs-globalnav:before {
 		content: "";
 		background: none;
