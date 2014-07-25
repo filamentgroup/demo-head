@@ -142,3 +142,40 @@ pre {
 	}
 
 }
+
+.docs-globalnav-large:before {
+	content: "Menu";
+	background: url('https://filamentgroup.github.io/demo-head/img/menubars.png') no-repeat scroll 1.5em 50% transparent;
+	color: #555;
+	padding: 1em 3.5em;
+	display: block;
+}
+.docs-globalnav-large a {
+	position: absolute;
+	left: -999px;
+	display: block;
+}
+.docs-globalnav-large.menuopen a {
+	position: static;
+}
+
+
+@media (min-width: 43em){
+	.docs-globalnav-large:before {
+		content: "";
+		background: none;
+		color: transparent;
+		padding: 0;
+		display: inline;
+	}
+	.docs-globalnav-large {
+		float: left;
+		width: 25%;
+		background-color: #F2F1ED;
+	}
+	.docs-globalnav-large a {
+		position: static;
+		float: none;
+		border-bottom: 1px solid #DDD;
+	}
+}
