@@ -179,6 +179,11 @@ pre {
 		border-bottom: 1px solid #DDD;
 	}
 
+  .nav-container {
+    clear: none;
+    float: left;
+    display: block;
+  }
   .nav-container + .docs-main {
     float: right;
   }
