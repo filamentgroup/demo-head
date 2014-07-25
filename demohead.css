@@ -169,8 +169,8 @@ pre {
 		display: inline;
 	}
 	.docs-globalnav-large {
-		float: left;
-		width: 25%;
+    display: block;
+    float: none;
 		background-color: #F2F1ED;
 	}
 	.docs-globalnav-large a {
@@ -183,6 +183,7 @@ pre {
     clear: none;
     float: left;
     display: block;
+		width: 25%;
   }
   .nav-container + .docs-main {
     float: right;
