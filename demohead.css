@@ -178,4 +178,8 @@ pre {
 		float: none;
 		border-bottom: 1px solid #DDD;
 	}
+
+  .docs-globalnav-large + .docs-main {
+    float: right;
+  }
 }
