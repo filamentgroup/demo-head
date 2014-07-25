@@ -187,5 +187,6 @@ pre {
   }
   .nav-container-large + .docs-main {
     float: right;
+    width: 75%;
   }
 }
