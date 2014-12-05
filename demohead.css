@@ -1,6 +1,15 @@
 body {
   margin: 0;
   padding: 0;
+  color: #000;
+  background-color: #fff;
+  font: 100%/1.2 sans-serif;
+}
+:link {
+    color: #1593D3;
+}
+:visited {
+    color: #38C;
 }
 .demo-header {
   font-family: "Source Sans Pro", sans-serif;
@@ -78,14 +87,9 @@ body {
 
 .docs-main {
   margin: 1em;
-  max-width: 50em;
+  max-width: 60em;
 }
 
-@media (min-width: 52em) {
-  .docs-main {
-    margin: 1em auto;
-  }
-}
 
 pre {
   white-space: pre-line;
