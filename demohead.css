@@ -94,6 +94,10 @@ body {
 pre {
   white-space: pre-line;
 }
+code {
+  font-size: 1.1em;
+  font-weight: bold;
+}
 
 .nav-container:before,
 .nav-container:after {
