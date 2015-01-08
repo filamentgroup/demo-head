@@ -12,10 +12,9 @@ body {
 		color: #38C;
 }
 .demo-header {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: Source Sans Pro, sans-serif;
 	font-size: 14px;
 	font-size: .9rem;
-	font-weight: normal;
 	padding: 14.4px 15px 10px;
 	padding: .9rem 15px .625rem;
 	border-bottom: 4px solid #619d43;
@@ -25,7 +24,7 @@ body {
 .demo-header h1 {
 	font-size: 14px;
 	font-size: .9rem;
-	font-weight: normal;
+	font-weight: 400;
 }
 .demo-header .company img {
 	height: 40px;
@@ -37,7 +36,7 @@ body {
 }
 
 .demo-header .repo-name {
-	font-weight: bold;
+	font-weight: 700;
 }
 .demo-header .repo-name:after {
 	display: inline-block;
@@ -65,7 +64,6 @@ body {
 .demo-header .outbound-links li > a {
 	text-decoration: none;
 	color: #2a93e9;
-	font-weight: normal;
 }
 
 @media (min-width: 48em){
@@ -96,7 +94,7 @@ pre {
 }
 code {
 	font-size: 1.1em;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .nav-container:before,
