@@ -26,13 +26,14 @@
     };
 
   // load font (woff)
-  var fontURL = "/demo-head/type/fonts.woff.min.css",
+  var protocol = location.protocol;
+  var fontURL = "filamentgroup.github.io/demo-head/type/fonts.woff.min.css",
     ua = navigator.userAgent,
     chromer = ua.indexOf( "Chrome" ) > -1;
   //  ttf if non-chrome android webkit browser
   if( ua.indexOf( "Android" ) > -1 && ua.indexOf( "like Gecko" ) > -1 && !chromer ){
-    fontURL = "/demo-head/type/fonts.ttf.min.css";
+    fontURL = "filamentgroup.github.io/demo-head/type/fonts.ttf.min.css";
   }
 
-  load( fontURL );
+  load( protocol + "//" + fontURL );
 }( this ));
