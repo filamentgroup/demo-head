@@ -25,13 +25,27 @@
       }
     };
 
+  var supportsWoff2 = (function( win ){
+    if( !( "FontFace" in win ) ) {
+      return false;
+    }
+
+    var f = new win.FontFace( "t", 'url( "data:application/font-woff2," ) format( "woff2" )', {} );
+    f.load();
+
+    return f.status == 'loading';
+  })( this );
+
   // load font (woff)
   var protocol = location.protocol;
   var fontURL = "filamentgroup.github.io/demo-head/type/fonts.woff.min.css",
     ua = navigator.userAgent,
     chromer = ua.indexOf( "Chrome" ) > -1;
+  if( supportsWoff2 ) {
+    fontURL = "filamentgroup.github.io/demo-head/type/fonts.woff2.min.css";
+
   //  ttf if non-chrome android webkit browser
-  if( ua.indexOf( "Android" ) > -1 && ua.indexOf( "like Gecko" ) > -1 && !chromer ){
+  } else if( ua.indexOf( "Android" ) > -1 && ua.indexOf( "like Gecko" ) > -1 && !chromer ){
     fontURL = "filamentgroup.github.io/demo-head/type/fonts.ttf.min.css";
   }
 
