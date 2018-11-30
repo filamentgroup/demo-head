@@ -4,9 +4,11 @@ Shared header module for demo pages.
 
 [![Filament Group](http://filamentgroup.com/images/fg-logo-positive-sm-crop.png) ](http://www.filamentgroup.com/)
 
-Full example code: [index.html](./index.html).
+## [Demo](https://filamentgroup.github.io/demo-head/)
 
 ## Code
+
+Full example code: [index.html](./index.html).
 
 ### CSS
 
